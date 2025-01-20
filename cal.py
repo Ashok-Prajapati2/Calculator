@@ -7,13 +7,13 @@ st.markdown("""
             background-color: #ffffff;
             background-image: linear-gradient(315deg, #ffffff 0%, #335c81 74%);
         }
-        .sttitle {
-         font-size: 8px;
-        }
     </style>
 """, unsafe_allow_html=True)
 
-st.title("""Hello, I am Ashok , welcome in my Advance Calculator""")
+
+st.markdown("""
+    <h1 style="font-size: 8px; font-weight: bold; color: #335c81;">Hello, I am Ashok , welcome in my Advance Calculator</h1>
+""", unsafe_allow_html=True)
 
 class Calculator:
     def __init__(self):
