@@ -12,7 +12,7 @@ st.markdown("""
 
 
 st.markdown("""
-    <h1 style="font-size: 25px; font-weight: bold; color: #335c81;">Hello, I am Ashok , welcome in my Advance Calculator</h1>
+    <h1 style="font-size: 25px; font-weight: bold; color: #C0C0C0;">Hello, I am Ashok , welcome in my Advance Calculator</h1>
 """, unsafe_allow_html=True)
 
 class Calculator:
