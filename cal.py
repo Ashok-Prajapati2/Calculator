@@ -7,6 +7,9 @@ st.markdown("""
             background-color: #ffffff;
             background-image: linear-gradient(315deg, #ffffff 0%, #335c81 74%);
         }
+        .sttitle {
+         font-size: 8px;
+        }
     </style>
 """, unsafe_allow_html=True)
 
