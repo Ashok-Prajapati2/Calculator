@@ -74,21 +74,20 @@ class CalculatorUI:
 
     def display_calculator_buttons(self):
         """Display calculator buttons on the Streamlit interface."""
-        cols = st.columns(3)
+        cols = st.columns(4)  # Adjusting to 4 columns
         col_list = [
-            [7, 8, 9], 
-            [4, 5, 6],  
-            [1, 2, 3],  
-            [0, "+", '-'],  
-            ['*', '/', 'C'],  
-            ['H', 'U', 'R']  
+            [7, 8, 9, '+'], 
+            [4, 5, 6, '-'],  
+            [1, 2, 3, '*'],  
+            [0, '/', 'C', '']  
         ]
         
         for row in col_list:
             for i, button in enumerate(row):
                 with cols[i]:
                     if st.button(str(button)):
-                        self.handle_button_click(button)
+                        self.handle_button_click(str(button))
+    
 
     def display_result(self):
         """Display the result of the calculation."""
