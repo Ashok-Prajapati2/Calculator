@@ -84,10 +84,18 @@ class CalculatorUI:
         
         for row in col_list:
             for i, button in enumerate(row):
-                with cols[i]:
-                    if st.button(str(button)):
+                if button == '':
+                    continue
+                button = str(button)
+                if button == '+':
+                    button = 'Add'
+                elif button == '-':
+                    button = 'Sub'
+                elif button == '*':
+                    button = 'Mul'
+                with cols[i]: 
+                    if st.button(button):
                         self.handle_button_click(str(button))
-    
 
     def display_result(self):
         """Display the result of the calculation."""
