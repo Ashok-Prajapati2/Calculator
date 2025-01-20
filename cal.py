@@ -95,7 +95,15 @@ class CalculatorUI:
                     button = 'Mul'
                 with cols[i]: 
                     if st.button(button):
-                        self.handle_button_click(str(button))
+                        if button == 'Add':
+                            self.handle_button_click('+')
+                        elif button == 'Sub':
+                            self.handle_button_click('-')
+                        elif button == 'Mul':
+                            self.handle_button_click('*')
+                        else:
+                            self.handle_button_click(str(button))
+
 
     def display_result(self):
         """Display the result of the calculation."""
